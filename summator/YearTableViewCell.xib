@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="YearTableViewCell" customModule="summator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-Pq-NXR">
+                        <rect key="frame" x="85" y="9" width="150" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o53-EW-9tt">
+                                <rect key="frame" x="20" y="35" width="110" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-Ci-t6x">
+                                <rect key="frame" x="20" y="85" width="110" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39607843139999999" green="0.77647058820000003" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9WA-Ci-t6x" secondAttribute="bottom" constant="20" id="E4U-8d-0dp"/>
+                            <constraint firstAttribute="trailing" secondItem="o53-EW-9tt" secondAttribute="trailing" constant="20" id="Ejg-k4-ONb"/>
+                            <constraint firstAttribute="trailing" secondItem="9WA-Ci-t6x" secondAttribute="trailing" constant="20" id="N4D-6Z-qwK"/>
+                            <constraint firstItem="o53-EW-9tt" firstAttribute="top" secondItem="lPy-Pq-NXR" secondAttribute="top" constant="35" id="Z3d-oI-qAs"/>
+                            <constraint firstItem="9WA-Ci-t6x" firstAttribute="leading" secondItem="lPy-Pq-NXR" secondAttribute="leading" constant="20" id="ctE-cL-ypf"/>
+                            <constraint firstAttribute="width" constant="150" id="gCp-JL-rzd"/>
+                            <constraint firstItem="9WA-Ci-t6x" firstAttribute="top" secondItem="o53-EW-9tt" secondAttribute="bottom" constant="20" id="jxJ-fk-D7u"/>
+                            <constraint firstItem="o53-EW-9tt" firstAttribute="leading" secondItem="lPy-Pq-NXR" secondAttribute="leading" constant="20" id="pa7-oa-u1k"/>
+                            <constraint firstAttribute="height" constant="150" id="qGi-zm-Kiu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lPy-Pq-NXR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CSg-CM-HVN"/>
+                    <constraint firstItem="lPy-Pq-NXR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kK4-Pl-0sd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="mainView" destination="lPy-Pq-NXR" id="xlf-ti-inL"/>
+                <outlet property="nameLabel" destination="o53-EW-9tt" id="ve0-T0-9VN"/>
+                <outlet property="sumLabel" destination="9WA-Ci-t6x" id="axp-bd-Yxo"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>
